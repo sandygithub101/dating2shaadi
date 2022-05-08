@@ -1,0 +1,761 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    overflow-x: hidden;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    font-size: 12px;
+    box-sizing: border-box; 
+    counter-reset: my-sec-counter;
+}
+
+.mt-6{
+    margin-top: 58px;
+}
+
+.mb-6{
+    margin-bottom: 58px;
+}
+
+.logo img{
+    width: 72%;
+}
+
+.admin_img p{
+    color: #F14E7B;
+}
+
+.admin_dropDown .dropdown-item{
+    color: #F14E7B;
+    font-size: 14px;
+}
+
+.admin_img a img{
+    border-radius: 50%;
+}
+
+.admin_dropDown p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.admin_dropDown a i{
+    font-size: 26px;
+    color: #F14E7B;
+}
+
+
+/* --------------------------------------------- */
+/* ---------- MAIN SIDE BAR -------------------------*/
+/* ----------------------------------------------- */
+
+.wrapper{
+	position: relative;
+}
+.sidebar{
+	position: sticky;
+	width: 250px;
+	height: 964px;
+	background: #EE2960;
+	padding: 20px 0;
+    border-radius: 4px;
+    margin-top: 98px;
+    float: left;
+}
+
+.side_admin{
+    border-radius: 14%;
+    width: 63%;
+    height: 145px;
+    margin-left: 46px;
+    margin-top: -94px;
+    position: relative;
+}
+
+ul{
+	padding-bottom: 20px; 
+    text-align: right;
+    /* float: right; */
+    display: block;
+    margin-top: 178px;
+}
+.sidebar .active{
+    background: #fff;
+    text-decoration: none;
+    color: #EE2960;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding: 22px;
+}
+
+.sidebar .active a{
+    text-decoration: none;
+    color: #EE2960;
+}
+
+ .sidebar ul li{
+	padding: 22px;	
+    display: block;
+    list-style: none;
+    margin-left: 42px;
+}
+.sidebar ul li a{
+	color: #fff;
+	display: block;
+    font-size: 20px;
+    font-weight: 700;
+}
+.sidebar ul li:hover{
+	background: #fff;
+    text-decoration: none;
+    color: #EE2960;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding: 22px;	
+}
+
+.sidebar ul li a:hover{
+	text-decoration: none;
+    color: #EE2960;
+}
+
+
+/* -------------------------------------------- */
+/* --------------- main_content -----------------/
+/* --------------------------------------------- */
+
+.main_content{
+    padding-left: 34px;
+    padding-right: 25px;
+    width: calc(100% - 282px);
+    height: auto;
+    margin-left: 250px;
+    position: relative;
+    top: 64px;
+}
+
+.main_content h2{
+    color: #EE2960;
+    font-weight: 700;
+}
+
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,3.1);
+}
+
+.users_progress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.users_progress i {
+    font-size: 80px;
+    color: #EE2960;
+}
+
+.users_progress p{
+    color: #020202;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.users_progress p.count{
+    color: #EE2960;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.border-right-1 {
+    border-right: 1px solid #000!important;
+    height: 133px;
+}
+
+  .border-right-2 {
+    border-right: 1px solid #000!important;
+    height: 114px;
+}
+
+#toggle {
+  top: 0;
+  right: 0;
+  position: absolute;
+  padding: 24px;
+  background: #17AACF;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+}
+
+#toggle::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  transform: translateY(-5px);
+  transition: 0.2s;
+  background-color: #fff;
+}
+
+#toggle::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  transform: translateY(5px);
+  transition: 0.2s;
+  background-color: #fff;
+}
+
+#toggle {
+  top: 0;
+  right: 0;
+  position: absolute;
+  padding: 24px;
+  background: #17AACF;
+  cursor: pointer;
+  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+}
+
+#toggle::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  transform: translateY(-5px);
+  transition: 0.2s;
+  background-color: #fff;
+}
+
+#toggle::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  transform: translateY(5px);
+  transition: 0.2s;
+  background-color: #fff;
+}
+
+
+  /* ---------------------------------------- */
+  /* ---------- Money Section --------------- */
+  /* ---------------------------------------- */
+
+  .sect_money i{
+    font-size: 80px;
+    color: #EE2960;
+    padding: 18px;
+  }
+
+  .sect_money {
+    height: 146px;
+    width: 326px;
+    background-image: linear-gradient(to left, black 50%, transparent 50%), linear-gradient(to left, black 50%, transparent 50%), linear-gradient(to top, black 50%, transparent 50%), linear-gradient(to bottom, black 50%, transparent 50%);
+    background-position: left top, left bottom, left top, right bottom;
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 44px 4px, 44px 4px, 4px 33px, 4px 33px;
+}
+  .sect_money p{
+    color: #EE2960;
+    font-size: 35px;
+    font-weight: 500;
+  }
+
+  .sect_money  .total{
+    font-size: 22px;
+    color: #020202;
+    font-weight: 500;
+  }
+
+  .sect_money .year{
+    font-size: 16px;
+    color: #020202;
+    padding-left: 34px;
+    font-weight: 500;
+  }
+
+  .events p{
+    color: #020202;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .ticket{
+    background-color: #EE2960;
+    color: #fff;
+    border-radius: 4px;
+    padding: 20px 70px;
+  }
+
+  .ticket p{
+      font-weight: 400;
+      font-size: 24px;
+  }
+
+  .ticket .price{
+      font-weight: 700;
+  }
+
+  .discount{
+    background-color: #EE2960;
+    color: #fff;
+    border-radius: 4px;
+    padding: 20px 70px;
+  }
+
+  .discount p{
+      font-weight: 400;
+      font-size: 25px;
+  }
+
+  .discount .price{
+      font-weight: 700;
+  }
+
+
+
+  /* ------------------------------------------------------ */
+  /* ----------------------  TABLE SECTION ----------------- */
+  /* ------------------------------------------------------ */
+
+  .table_section {
+    margin-top: 224px;
+    padding: 0px 55px;
+}
+
+.table_section .table_title{
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: 3px solid #EE2960;
+    display: inline-block;
+    line-height: 40px;
+}
+
+.table_hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,3.1);
+    width: calc(95% - 4px);
+    margin-left: 66px;
+}
+
+.All_users{
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid #EE2960;
+    line-height: 27px;
+}
+
+.btn-width{
+  width: 86px;
+}
+
+.user_btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* border: 1px solid transparent; */
+    padding: 0.375rem 0.75rem;
+    font-size: 16px;
+    line-height: 1.5;
+    /* border-radius: 0.25rem; */
+    /* transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
+    outline: none;
+    border: 0px;
+    background: none;
+}
+
+.user_btn_primary {
+    color: gray;
+    background-color: none;
+    border-color: none;
+}
+
+.user button:focus {
+    /* outline: 1px dotted;  */
+    outline: none;
+}
+
+.dropdown-menu-user{
+    border: 0px!important;
+    width: 95%;
+    font-size: 16px!important;
+    color: gray;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.255em;
+    vertical-align: middle;
+    content: "";
+    border-top: 0.4em solid;
+    border-right: 0.4em solid transparent;
+    border-bottom: 0;
+    border-left: 0.4em solid transparent;
+}
+
+.user_cont{
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.input-group-user{
+    width: 40%;
+}
+
+.input-group-user span button i{
+    color: #EE2960;
+}
+
+.border-user {
+    border: 1px solid #EE2960!important;
+}
+
+.input-group-user input:focus{
+    border-right: 0px!important;
+    box-shadow: none;
+}
+
+.input-group-user button.border-user {
+    border: 1px solid #EE2960!important;
+    border-left: 0px!important;
+    font-size: 16px!important;
+    padding-left: 14px;
+}
+
+
+/* ---------------------------------------------------- */
+/* ----------------- Data Table ----------------------- */
+/* ---------------------------------------------------- */
+
+/*
+	Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
+	*/
+      table { 
+        width: 100%; 
+        border-collapse: collapse; 
+      }
+      .t_border{
+        border: 1px solid #dee2e6!important;
+        border-radius: 10px;
+        padding: 0px 26px 26px;
+        -webkit-box-shadow: 4px 4px 5px -2px rgba(0,0,0,0.4);
+        -moz-box-shadow: 4px 4px 5px -2px rgba(0,0,0,0.4);
+        box-shadow: 4px 4px 5px -2px rgba(0,0,0,0.4);
+      }
+      th { 
+        background: #fff;
+        color: black;
+        font-size: 16px;
+        padding: 10px;
+        border-bottom: 1px solid #000;
+        text-align: left;
+        box-sizing: border-box;
+        font-weight: 500;
+      }
+      
+      td { 
+        padding: 10px;
+        text-align: left;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      
+      tr:nth-of-type(odd) { 
+        color: #8F9957; 
+      }
+
+      tr:nth-of-type(even) { 
+        color: #0C8B93; 
+      }
+      
+      @media
+            only screen 
+          and (max-width: 760px), (min-device-width: 768px) 
+          and (max-device-width: 1024px)  {
+      
+            table {
+              margin-top: 10px;
+            }
+              /* Force table to not be like tables anymore */
+              table, thead, tbody, th, td, tr {
+                  display: block;
+              }
+      
+              /* Hide table headers (but not display: none;, for accessibility) */
+              thead tr {
+                  position: absolute;
+                  top: -9999px;
+                  left: -9999px;
+              }
+      
+          tr {
+            margin: 0 0 1rem 0;
+            overflow: auto;
+            border-bottom: 1px solid #ccc;
+          }
+            
+            
+            
+            tbody tr:before {
+              counter-increment: my-sec-counter;
+              content: "";
+              background-color:#333;
+              display: block;
+              height: 1px;
+            }
+      
+            
+          tr:nth-child(odd) {
+            color: #8F9957;
+          }
+          
+              td {
+                  /* Behave  like a "row" */
+                  border: none;
+                  border-bottom: 1px solid #eee;
+            margin-right: 0%;
+            display: block;
+            border-right: 1px solid #ccc;
+            border-left: 1px solid #ccc;
+            box-sizing:border-box;
+              }
+      
+              td:before {
+                  /* Top/left values mimic padding */
+            font-weight: bold;
+                  width: 50%;
+            float:left;
+            box-sizing:border-box;
+            padding-left: 5px;
+              }
+      
+              /*
+              Label the data
+          You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+              */
+              td:nth-of-type(1):before { content: "Name"; }
+              td:nth-of-type(2):before { content: "Age"; }
+              td:nth-of-type(3):before { content: "Gender"; }
+              td:nth-of-type(4):before { content: "Phone No."; }
+              td:nth-of-type(5):before { content: "Email"; }
+              td:nth-of-type(6):before { content: "City"; }
+              td:nth-of-type(7):before { content: "Status"; }
+      }
+   
+
+
+      .t_btn {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: 0.375rem 0.75rem;
+        font-size: 16px;
+        line-height: 1.5;
+        border-radius: 0.25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+   
+
+/* ---------------------------------------------- */
+/* ----------------- Pagination ----------------- */
+/* ---------------------------------------------- */
+
+.pagination li{
+  list-style: none;
+}
+
+.pagination li.active{
+  background-color: #EE2960;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.pagination li:hover{
+  background-color: #EE2960;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.pagination li{
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0px 10px;
+}
+
+.pagination li.next{
+  color: #EE2960;
+}
+
+.pagination li.next:hover{
+  color: #fff;
+}
+
+.m-top{
+  margin-top: 150px;
+}
+
+.m-top .lorem{
+  padding: 20px;
+  font-size: 20px;
+  position: relative;
+}
+
+
+/* ------------------------------------------------------- */
+/* ------------------- MEDIA QUERIES --------------------- */
+/* ------------------------------------------------------- */
+
+@media (max-width: 991px){
+  
+  .sidebar{
+    display: none;
+  }
+
+  .main_content{
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .table_hr {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+}
+
+@media (max-width: 900px){
+
+  .users_progress p {
+    font-size: 24px;
+  }
+
+  .events p {
+    font-size: 24px;
+  }
+
+  .border-right-2 {
+    height: 70px;
+  }
+
+  .sect_money p {
+    font-size: 33px;
+  }
+
+  .sect_money .total {
+    font-size: 25px;
+  }
+
+  .sect_money .year {
+    font-size: 18px;
+  }
+
+  .sect_money i {
+    font-size: 80px;
+  }
+
+}
+
+@media (max-width: 700px){
+
+  .users_progress p {
+    font-size: 18px;
+  }
+
+  .border-right-1 {
+    height: 124px;
+  }
+
+  .users_progress p {
+    font-size: 18px;
+  }
+
+  .users_progress i {
+    font-size: 70px;
+
+  }
+
+  .events p {
+    font-size: 18px;
+  }
+
+  .border-right-2 {
+    height: 56px;
+  }
+
+  .ticket p {
+    font-size: 18px;
+  }
+
+  .discount p {
+    font-size: 18px;
+  }
+
+  .sect_money i {
+    font-size: 70px;
+  }
+
+  .sect_money p {
+    font-size: 28px;
+  }
+
+  .sect_money .total {
+    font-size: 18px;
+  }
+
+  .sect_money .year {
+    font-size: 11px;
+    padding-left: 28px;
+  }
+
+}
+
+
+@media (max-width: 576px){
+
+  .border-right-1 {
+    border-right: 0px!important;
+  }
+
+  .border-right-2 {
+    border-right: 0px !important;
+  }
+
+}
