@@ -60,7 +60,7 @@ body{
 	position: relative;
 }
 .sidebar{
-	position: sticky;
+	position: absolute;
 	width: 250px;
 	height: 964px;
 	background: #EE2960;
@@ -187,51 +187,12 @@ hr {
     height: 114px;
 }
 
-#toggle {
-  top: 0;
-  right: 0;
-  position: absolute;
-  padding: 24px;
-  background: #17AACF;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 40px;
-}
-
-#toggle::before {
-  content: "";
-  position: absolute;
-  width: 28px;
-  height: 2px;
-  transform: translateY(-5px);
-  transition: 0.2s;
-  background-color: #fff;
-}
-
-#toggle::after {
-  content: "";
-  position: absolute;
-  width: 28px;
-  height: 2px;
-  transform: translateY(5px);
-  transition: 0.2s;
-  background-color: #fff;
-}
+/* --------------------------------------------------- */
+/* ------------- Toggle button ----------------------- */
+/* ---------------------------------------------------- */
 
 #toggle {
-  top: 0;
-  right: 0;
-  position: absolute;
-  padding: 24px;
-  background: #17AACF;
-  cursor: pointer;
   display: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 40px;
 }
 
 #toggle::before {
@@ -254,6 +215,38 @@ hr {
   background-color: #fff;
 }
 
+
+#toggle::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  transform: translateY(-5px);
+  transition: 0.2s;
+  background-color: #fff;
+}
+
+#toggle::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  transform: translateY(5px);
+  transition: 0.2s;
+  background-color: #fff;
+}
+
+#toggle.active {
+  background-color: #EE2960;
+}
+
+#toggle.active::before {
+  transform: translateY(0px) rotate(45deg);
+}
+
+#toggle.active::after {
+  transform: translateY(0px) rotate(-45deg);
+}
 
   /* ---------------------------------------- */
   /* ---------- Money Section --------------- */
@@ -645,8 +638,30 @@ hr {
 
 @media (max-width: 991px){
   
+  #toggle {
+    top: -60px;
+    margin-left: 0;
+    position: absolute;
+    padding: 20px;
+    background: #EE2960;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+  }
+
   .sidebar{
     display: none;
+  }
+
+  .sidebar.active {
+    display: block;
+    z-index: 1000;
+    position: absolute;
+    margin-top: 0;
+    left: 0;
+    transition: 0.5s;
   }
 
   .main_content{
