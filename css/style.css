@@ -70,15 +70,13 @@ body{
     float: left;
 }
 
-.side_admin{
-    border-radius: 14%;
-    width: 63%;
-    height: 145px;
-    margin-left: 46px;
-    margin-top: -94px;
-    position: relative;
+.side_admin {
+  border-radius: 14%;
+  width: 63%;
+  margin-left: 46px;
+  margin-top: -94px;
+  position: relative;
 }
-
 ul{
 	padding-bottom: 20px; 
     text-align: right;
